@@ -103,6 +103,11 @@ margin-bottom: 40px;
     
     gap: 16px;
 }
+.player:hover{
+    box-shadow: 0px 5.34229px 13.3557px rgb(0 0 0 / 13%);
+    border-radius: 10px;
+    cursor: pointer;
+}
 .player img{
     width: 56px;
     height: 56px;
@@ -130,6 +135,12 @@ grid-row-gap: 26px;
 .top-blog-blogs{
     display: flex;
     gap: 16px;
+    padding: 0px 5px;
+}
+.top-blog-blogs:hover{
+    box-shadow: 0px 5.34229px 13.3557px rgb(0 0 0 / 13%);
+    border-radius: 10px;
+    cursor: pointer;
 }
 .top-blog-blogs .blog-img img{
     width: 177px;
@@ -173,6 +184,12 @@ grid-row-gap: 26px;
     .lates-course-info{
         margin: 0 auto;
         filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+        padding: 3px;
+    }
+    .lates-course-info:hover{
+        box-shadow: 0px 5.34229px 13.3557px rgb(0 0 0 / 13%);
+    border-radius: 10px;
+    cursor: pointer;
     }
     .lates-course .lates-course-info img{
         width: 224px;
@@ -229,7 +246,7 @@ grid-row-gap: 26px;
 
     /* -------media query------ medium devies */
 
-    @media only screen and (max-width:688px) {
+    @media only screen and (max-width: 688px) {
         nav{
             width: 100%;
         }
@@ -246,7 +263,11 @@ grid-row-gap: 26px;
            justify-content: center;
        }
        .top-blog-blogs{
-           display: block;
+           flex-direction: column;
+           /* justify-content: center; */
+           /* align-items: center; */
+           /* gap: 30px; */
+           padding-left: 50px;
        }
        .lates-course-info{
            margin-bottom: 30px;
