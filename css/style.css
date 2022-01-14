@@ -65,6 +65,7 @@ nav{
     color: #FFFFFF;
     padding-left: 36px;
     font-size: 16px;
+    cursor: pointer;
     font-weight: normal;
 }
 /* --------End nav-bar style------- */
@@ -243,7 +244,22 @@ grid-row-gap: 26px;
         line-height: 20px;
         
     }
-
+    #nav-toggle{
+        display: none;
+    }
+.toggle-bar{
+    font-size: 35px;
+    color: white;
+    display: none;
+}
+footer{
+    height: 96px;
+    background-color:#562EFF ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
     /* -------media query------ medium devies */
 
     @media only screen and (max-width: 688px) {
@@ -252,10 +268,33 @@ grid-row-gap: 26px;
             /* padding: 0px 10px; */
             justify-content: space-around;
         }
-        .nav-bar-logo .logo-text,.nav-bar-menu .menu ul li {
-            font-size: 15px;
-            padding-left: 15px;
+        .toggle-bar{
+            display: block;
         }
+        .nav-bar-menu{
+            position: absolute;
+            top: 94px;
+            width: 100%;
+            background-color: #562EFF;
+             flex-direction: column;
+             padding-bottom: 20px;
+             transform: translateY(-250px);
+             transition: .3s ease-in-out;
+          
+
+        }
+        #nav-toggle:checked ~ .nav-bar-menu{
+            transform: translateY(0px);
+
+        }
+        .nav-bar-menu .menu{
+            order: 2;
+        }
+        
+        .nav-bar-logo{
+            gap:10px;
+        }
+       
         .container{
            width: 100%;
        }
@@ -272,9 +311,9 @@ grid-row-gap: 26px;
        .top-blog-blogs{
            flex-direction: column;
            /* justify-content: center; */
-           /* align-items: center; */
+           align-items: center;
            /* gap: 30px; */
-           padding-left: 50px;
+          
        }
        .lates-course-info{
            margin-bottom: 30px;
