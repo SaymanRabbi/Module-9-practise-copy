@@ -318,6 +318,9 @@ footer{
        .lates-course-info{
            margin-bottom: 30px;
        }
+       footer{
+           font-size: 14px;
+       }
     }
     /* -------tablet size-------- */
     @media only screen and (min-width: 688px) and (max-width:992px) {
